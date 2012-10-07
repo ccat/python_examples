@@ -109,3 +109,14 @@ for i in tempGen:
 tempGen=outernalGenerator2()
 for i in tempGen:
     print i
+
+#-------------------------------------------------------------------------------
+"""Example 4: Generator cannot be pickled """
+
+import pickle
+
+tempGen=outernalGenerator2()
+
+print pickle.dumps(tempGen)
+
+
